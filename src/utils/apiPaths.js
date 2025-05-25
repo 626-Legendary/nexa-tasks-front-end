@@ -1,7 +1,8 @@
 // export const BASE_URL="https://task-manager-server-j5gu.onrender.com"
 
 //本地测试
-export const BASE_URL = "http://localhost:8000"
+//export const BASE_URL = "http://localhost:8000"
+export const BASE_URL = "http://54.219.50.64:8000" // AWS
 
 
 //utils/apiPath.js
