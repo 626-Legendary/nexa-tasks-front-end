@@ -1,9 +1,6 @@
 // export const BASE_URL="https://task-manager-server-j5gu.onrender.com"
 
-//本地测试
-//export const BASE_URL = "http://localhost:8000"
-export const BASE_URL = "http://54.219.50.64:8000" // AWS
-
+export const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 //utils/apiPath.js
 export const API_PATHS ={

@@ -1,6 +1,6 @@
-import {useState} from 'react';
-import {HiOutlineMenu,HiOutlineX} from "react-icons/hi"
-import SideMenu from './SideMenu'; 
+import { useState } from 'react';
+import { HiOutlineMenu, HiOutlineX } from "react-icons/hi"
+import SideMenu from './SideMenu';
 
 const Navbar = ({ activeMenu }) => {
   const [openSideMenu, setOpenSideMenu] = useState(false);
@@ -19,8 +19,11 @@ const Navbar = ({ activeMenu }) => {
           <HiOutlineMenu className="text-2xl" />
         )}
       </button>
+      <div className="flex gap-4 items-center">
+        <img className="hidden lg:block w-8 h-8" src="/NexaTasks.png" alt="" />
+        <h2 className="text-lg font-medium  text-black">Nexa Tasks <span className='text-gray-400 font-normal'>Beta 1.2</span></h2>
+      </div>
 
-      <h2 className="text-lg font-medium text-black">Nexa Tasks</h2>
 
       {openSideMenu && (
         <div className="fixed top-[61px] -ml-4 bg-white">
